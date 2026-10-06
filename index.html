@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website pertama abuy</title>
+
+    <link rel="stylesheet" href="stail.css">
+</head>
+
+<body>
+    <div class="scroll-progress" aria-hidden="true">
+    </div class="scroll-progress=bar"></div>
+    </div>
+    <canvas id="particle-canvas" aria-hidden="true"></canvas>
+    <nav class="navbar">
+    <a href="#" class="logo">abil<span></span></a>
+
+    <button class="menu-toggle" aria-label="Buka menu"
+        aria-expanded="false">
+        ☰
+    </button>
+
+    <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="#civil-lab">Civil Lab</a>
+    </div>
+<button
+    class="theme-toggle"
+    id="theme-toggle"
+    type="button"
+    aria-label="Ganti ke tema terang"
+    title="Ganti tema"
+>
+    <span id="theme-icon" aria-hidden="true">☀️</span>
+</button>
+```
+
+</nav>
+
+    <div class="card" id="home">
+        <h1 class="judul-home"></h1>
+        <span id="teks-mengetik"></span>
+        <span class="kursor-mengetik">|</span>
+        </h1>
+        <p>Ini projek pertama aku</p>
+
+        <button onclick="sapaAku()">Klik Coba tombol ini</button>
+        <a href="#projects" class="tombol-project"> Lihat Project <span>↗</span> </a>
+        <p id="pesan"></p>
+    </div>
+
+    
+<!-- ABOUT SECTION -->
+<section class="section-card" reveal id="about">
+    <h2>About Me</h2>
+   
+<div class="stats-container">
+    <div class="stat-card">
+        <span class="stat-number" data-target="3">0</span>
+        <p>Teknologi Dipelajari</p>
+    </div>
+
+    <div class="stat-card">
+        <span class="stat-number" data-target="2">0</span>
+        <p>Proyek Dipelajari</p>
+    </div>
+
+    <div class="stat-card">
+        <span class="stat-number" data-target="100" data-suffix="%">0</span>
+        <p>Semangat Belajar</p>
+    </div>
+</div>
+
+
+    <p>
+        Halo! aku Abil, seorang mahasiswa yang lagi belajar
+        coding dan mengembangkan skill di bidang teknologi.
+    </p>
+</section>
+
+<!-- PROJECTS SECTION -->
+<section class="section-card" reveal id="projects">
+    <h2>My Projects</h2>
+    <p>Ini beberapa proyek yang sedang aku lagi aku 
+     pelajari.</p>
+
+    <div class="project-list">
+        <div class="project-item">
+            <h3>Website Pertama</h3>
+            <p>Belajar HTML, CSS, dan JavaScript.</p>
+        </div>
+
+        <div class="project-item">
+            <h3>Project Teknik Sipil</h3>
+            <p>Belajar membuat program perhitungan sederhana.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section-card" reveal id="contact">
+    <h2>Contact Me</h2>
+    <p>Mau ngobrol atau kolaborasi? Hubungi aku!</p>
+
+    <a class="contact-link" href="mailto:abigailsorrizzz@gmail.com">
+        Kirim Email
+    </a>
+</section>
+
+
+<!-- CIVIL ENGINEERING LAB -->
+<section class="section-card reveal" id="civil-lab">
+    <div class="civil-lab-header">
+    <div class="civil-lab-badge">CIVIL ENGINEERING</div>
+
+    <h2>Engineering Lab</h2>
+
+    <p>
+        Kalkulator sederhana untuk membantu perhitungan dasar
+        teknik sipil.
+    </p>
+
+    <div class="civil-lab-line"></div>
+</div>
+
+    <!-- KALKULATOR PENAMPANG -->
+    <div class="civil-tool-card">
+        <h3>01. Luas Penampang</h3>
+        <p>Hitung luas penampang persegi panjang untuk balok atau kolom.</p>
+
+        <form id="area-form">
+            <label for="area-width">Lebar (b)</label>
+            <input id="area-width" type="number"
+                min="0" step="any" placeholder="Contoh: 300" required>
+
+            <label for="area-height">Tinggi (h)</label>
+            <input id="area-height" type="number"
+                min="0" step="any" placeholder="Contoh: 500" required>
+
+            <label for="area-unit">Satuan dimensi</label>
+            <select id="area-unit">
+                <option value="mm">Milimeter (mm)</option>
+                <option value="m">Meter (m)</option>
+            </select>
+
+            <button type="submit">Hitung Luas</button>
+            <div id="area-result"></div>
+
+<div id="area-detail" class="civil-calculation-detail">
+    <button type="button" id="area-detail-button">
+        Lihat Detail Perhitungan
+    </button>
+
+    <div id="area-detail-content" class="civil-detail-content">
+        <p id="area-formula"></p>
+    </div>
+        </form>
+    </div>
+
+    <!-- KALKULATOR VOLUME -->
+    <div class="civil-tool-card">
+        <h3>02. Volume Beton</h3>
+        <p>Hitung volume geometris balok beton berbentuk persegi panjang.</p>
+
+        <form id="volume-form">
+            <label for="volume-length">Panjang (p)</label>
+            <input id="volume-length" type="number"
+                min="0" step="any" placeholder="Contoh: 400" required>
+
+            <label for="volume-width">Lebar (b)</label>
+            <input id="volume-width" type="number"
+                min="0" step="any" placeholder="Contoh: 300" required>
+
+            <label for="volume-height">Tinggi (h)</label>
+            <input id="volume-height" type="number"
+                min="0" step="any" placeholder="Contoh: 500" required>
+
+            <label for="volume-unit">Satuan dimensi</label>
+            <select id="volume-unit">
+                <option value="mm">Milimeter (mm)</option>
+                <option value="m">Meter (m)</option>
+            </select>
+
+            <button type="submit">Hitung Volume</button>
+
+<div id="volume-result" class="civil-result" aria-live="polite">
+    Hasil perhitungan akan muncul di sini.
+</div>
+
+<div id="volume-detail" class="civil-calculation-detail">
+    <button type="button" id="volume-detail-button">
+        Lihat Detail Perhitungan
+    </button>
+
+    <div id="volume-detail-content" class="civil-detail-content">
+        <p id="volume-formula"></p>
+    </div>
+        </form>
+    </div>
+
+    <!-- ESTIMATOR BATA -->
+    <div class="civil-tool-card">
+        <h3>03. Estimator Bata</h3>
+        <p>Estimasi awal jumlah bata berdasarkan luas dinding bersih.</p>
+
+        <form id="brick-form">
+            <label for="wall-length">Panjang dinding (m)</label>
+            <input id="wall-length" type="number"
+                min="0" step="any" placeholder="Contoh: 4" required>
+
+            <label for="wall-height">Tinggi dinding (m)</label>
+            <input id="wall-height" type="number"
+                min="0" step="any" placeholder="Contoh: 3" required>
+
+            <label for="wall-openings">Total luas pintu dan jendela (m²)</label>
+            <input id="wall-openings" type="number"
+                min="0" step="any" value="0" required>
+
+            <label for="brick-rate">Kebutuhan bata per m²</label>
+            <input id="brick-rate" type="number"
+                min="0" step="any" value="70" required>
+
+            <label for="brick-waste">Cadangan material (%)</label>
+            <input id="brick-waste" type="number"
+                min="0" step="any" value="5" required>
+
+            <button type="submit">Estimasi Bata</button>
+            <<div id="brick-detail" class="civil-calculation-detail">
+    <button type="button" id="brick-detail-button">
+        Lihat Detail Perhitungan
+    </button>
+
+    <div id="brick-detail-content" class="civil-detail-content">
+        <p id="brick-formula"></p>
+    </div>
+        </form>
+    </div>
+
+    <!-- REFERENSI RUMUS -->
+    <div class="civil-tool-card civil-formula-card">
+        <h3>04. Referensi Rumus</h3>
+
+        <div class="civil-formula">
+            <strong>Luas penampang persegi panjang</strong>
+            <p>A = b × h</p>
+            <small>b = lebar, h = tinggi</small>
+        </div>
+
+        <div class="civil-formula">
+            <strong>Volume balok persegi panjang</strong>
+            <p>V = p × b × h</p>
+            <small>p = panjang, b = lebar, h = tinggi</small>
+        </div>
+
+        <div class="civil-formula">
+            <strong>Luas dinding bersih</strong>
+            <p>A = (p × h) − A bukaan</p>
+            <small>Bukaan adalah total luas pintu dan jendela.</small>
+        </div>
+
+        <p class="civil-note">
+            Catatan: kalkulator ini untuk pembelajaran dan estimasi awal,
+            bukan pengganti perhitungan desain struktur profesional.
+        </p>
+    </div>
+
+    
+
+<div class="civil-tool-card" id="civil-history">
+    <h3>05. Riwayat Perhitungan</h3>
+    <p>Hasil kalkulasi yang pernah lu lakukan akan tersimpan di browser ini.</p>
+
+    <div class="civil-history-actions">
+        <span id="history-count">0 perhitungan tersimpan</span>
+
+    <div class="civil-history-buttons">
+   
+        <button type="button" id="clear-history">
+            Hapus Semua
+        </button>
+        <button type="button" id="export-history">Ekspor CSV</button>    
+        <button type="button" id="print-history">Cetak / PDF</button>
+    </div>
+</div>
+
+    <div id="civil-history-list" aria-live="polite">
+        <p class="civil-history-empty">
+            Belum ada riwayat. Coba lakukan perhitungan dulu!
+        </p>
+    </div>
+</div>
+
+</section>
+
+
+    
+    <script src="java.js"></script>
+</body>
+    
+</html>
